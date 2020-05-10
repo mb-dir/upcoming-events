@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your upcoming events list!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <h1 class="mainHeader">Twoje wydarzenia</h1>
+
+    <form class="section addEvent">
+        <h2 class="addEvent__header">
+            Dodaj wydarzenie
+        </h2>
+    
+        <div class="inputContainer">
+            <div class="inputContainer__item inputContainer__item--bigger">
+                <label class="addEvent__label" for="eventContents">Nazwa wydarzenia</label>
+                <input class="addEvent__eventContentesInput input" type="text" id="eventContents" required>
+            </div>
+    
+            <div class="inputContainer__item">
+                <label class="addEvent__label" for="eventDate">Data wydarzenia</label>
+                <input class="addEvent__eventDateInput input" type="date" id="eventDate" required>
+            </div>
+        </div>
+    
+        <button class="btn addEvent__btn">Dodaj</button>
+    </form>
+
+    <section class="section events">
+        <h2 class="events__header">Nadchodzące wydarzenia</h2>
+    
+        <ul class="list event__list">
+            <li class="list__item">
+                <div class="dataContainer">
+                    <div class="list__eventContents">Wizyta u dentysty</div>
+                    <div class="list__eventDate">Data: 04.07.2020</div>
+                </div>
+    
+                <button class="btn btn--deleteEvent">X</button>
+            </li>
+    
+            <li class="list__item">
+                <div class="dataContainer">
+                    <div class="list__eventContents">Wizyta u dentysty</div>
+                    <div class="list__eventDate">Data: 04.07.2020</div>
+                </div>
+    
+                <button class="btn btn--deleteEvent">X</button>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
