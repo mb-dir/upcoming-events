@@ -13,6 +13,10 @@ body {
     margin: 0 auto 50px;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
 /*STYLES FOR SUBMITING DATA FORM*/
 
 .addEvent {
