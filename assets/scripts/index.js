@@ -1,3 +1,4 @@
+import SaveStore from './components/SaveStore.js';
 const addEventForm = document.querySelector('#addEventForm');
 
 addEventForm.addEventListener('submit', (e)=>{
@@ -6,4 +7,6 @@ addEventForm.addEventListener('submit', (e)=>{
     //variables
     const eventName = document.querySelector('#eventContents').value;
     const eventDate = document.querySelector('#eventDate').value;
+
+    const saveEvent = new SaveStore(eventName, eventDate);
 });
