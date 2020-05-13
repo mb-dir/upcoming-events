@@ -1,5 +1,6 @@
 import SaveStore from './components/SaveStore.js';
-import DrawList from './components/SaveStore.js';
+import DrawList from './components/DrawList.js';
+const drawList = new DrawList('events')
 const addEventForm = document.querySelector('#addEventForm');
 
 addEventForm.addEventListener('submit', (e)=>{
