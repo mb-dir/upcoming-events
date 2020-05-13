@@ -9,3 +9,4 @@ class DrawList{
         console.log(eventsArray)
     }
 }
+export default DrawList;
