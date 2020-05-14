@@ -30,6 +30,7 @@ class DrawList{
 
         const btnDelete = document.createElement('button');
         btnDelete.className = "btn btn--deleteEvent";
+        btnDelete.textContent = "X";
         
         //combining components of list item
 
