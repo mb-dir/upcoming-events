@@ -2,6 +2,7 @@ import SaveStore from './components/SaveStore.js';
 import DrawList from './components/DrawList.js';
 const drawList = new DrawList('events')
 const addEventForm = document.querySelector('#addEventForm');
+const eventsList = document.querySelector('#eventsList');
 
 addEventForm.addEventListener('submit', (e)=>{
     e.preventDefault();
