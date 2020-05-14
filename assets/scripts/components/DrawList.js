@@ -2,6 +2,7 @@ class DrawList{
     constructor(nameEventsArray, referenceToList){
         //this property stores name of events array which is in localstore 
         this.nameEventsArray = nameEventsArray;
+        this.referenceToList = referenceToList;
         this.drawList();
     }
     drawList(){
@@ -9,7 +10,7 @@ class DrawList{
         eventsArray.forEach(ev => {
             const {date, name} = ev
             const listItem = this.createListItem(date, name);
-            referenceToList.appendChild(listItem);
+            this.referenceToList.appendChild(listItem);
         });
     }
     createListItem(name, date){
