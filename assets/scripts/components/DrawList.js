@@ -8,7 +8,7 @@ class DrawList{
     drawList(){
         const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray))
         eventsArray.forEach(ev => {
-            const {date, name} = ev
+            const {date, name} = ev;
             const listItem = this.createListItem(date, name);
             this.referenceToList.appendChild(listItem);
         });
