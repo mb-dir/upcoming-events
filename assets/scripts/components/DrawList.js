@@ -6,7 +6,10 @@ class DrawList{
     }
     drawList(){
         const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray))
-        console.log(eventsArray)
+        eventsArray.forEach(ev => {
+            const {date, name} = ev
+            console.log(date, name)
+        });
     }
 }
 export default DrawList;
