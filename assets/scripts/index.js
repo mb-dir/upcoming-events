@@ -14,4 +14,5 @@ addEventForm.addEventListener('submit', (e)=>{
     const eventDate = document.querySelector('#eventDate').value;
 
     const saveEvent = new SaveStore(eventName, eventDate);
+    const eventsHandling = new EventsHandling(eventName, eventDate, eventsList)
 });
