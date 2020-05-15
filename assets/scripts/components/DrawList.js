@@ -5,6 +5,7 @@ class DrawList{
         this.referenceToList = referenceToList;
         this.drawList();
     }
+    //Methods responsible for drawing events list based on localstorage
     drawList(){
         const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray))
         eventsArray.forEach(ev => {
@@ -41,5 +42,7 @@ class DrawList{
 
         return listItem;
     }
+
+    //Methods responsible for dynamically adding events to list
 }
 export default DrawList;
