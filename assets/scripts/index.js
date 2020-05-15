@@ -1,5 +1,6 @@
 import SaveStore from './components/SaveStore.js';
 import DrawList from './components/DrawList.js';
+import EventsHandling from './components/EventsHandling.js';
 
 const addEventForm = document.querySelector('#addEventForm');
 const eventsList = document.querySelector('#eventsList');
@@ -13,4 +14,6 @@ addEventForm.addEventListener('submit', (e)=>{
     const eventDate = document.querySelector('#eventDate').value;
 
     const saveEvent = new SaveStore(eventName, eventDate);
+    const eventsHandling = new EventsHandling(eventName, eventDate, eventsList)
+    eventsHandling.dynamicallyAddEvent();
 });
