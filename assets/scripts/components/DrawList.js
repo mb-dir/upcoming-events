@@ -42,7 +42,5 @@ class DrawList{
 
         return listItem;
     }
-
-    //Methods responsible for dynamically adding events to list
 }
 export default DrawList;
