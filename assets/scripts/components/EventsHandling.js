@@ -6,7 +6,7 @@ class EventsHandling{
     }
     dynamicallyAddEvent(){
         const itemToAdd = this.createListItem(this.eventName, this.eventDate);
-        referenceToList.appendChild(itemToAdd)
+        this.referenceToList.appendChild(itemToAdd)
     }
     createListItem(name, date) {
         const listItem = document.createElement('li');
