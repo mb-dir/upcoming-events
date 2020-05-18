@@ -1,3 +1,5 @@
+import CreateListItem from './CreateListItem.js'
+
 class DrawList{
     constructor(nameEventsArray, referenceToList){
         //this property stores name of events array which is in localstore 

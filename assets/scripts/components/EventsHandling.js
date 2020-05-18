@@ -1,3 +1,5 @@
+import CreateListItem from './CreateListItem.js'
+
 class EventsHandling{
     constructor(eventName, eventDate, referenceToList) {
         this.eventName = eventName;
