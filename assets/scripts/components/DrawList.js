@@ -1,4 +1,4 @@
-import CreateListItem from './CreateListItem.js'
+import CreateListItem from './CreateListItem.js';
 
 class DrawList{
     constructor(nameEventsArray, referenceToList){

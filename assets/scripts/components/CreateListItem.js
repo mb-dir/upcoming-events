@@ -33,9 +33,9 @@ class CreateListItem {
         listItem.appendChild(btnDelete);
 
         btnDelete.addEventListener('click', ({currentTarget})=>{
-            const liToDelete = currentTarget.closest('li')
+            const liToDelete = currentTarget.closest('li');
             const eventName = liToDelete.querySelector('.list__eventContents').textContent;
-            new DeleteFromStore(eventName, 'events')
+            new DeleteFromStore(eventName, 'events');
             this.referenceToList.removeChild(liToDelete);
         });
 

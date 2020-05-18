@@ -1,4 +1,4 @@
-import CreateListItem from './CreateListItem.js'
+import CreateListItem from './CreateListItem.js';
 
 class EventsHandling{
     constructor(eventName, eventDate, referenceToList) {
@@ -9,7 +9,7 @@ class EventsHandling{
     dynamicallyAddEvent(){
         const listItemCreator = new CreateListItem(this.eventDate, this.eventName, this.referenceToList);
         const itemToAdd = listItemCreator.createListItem();
-        this.referenceToList.appendChild(itemToAdd)
+        this.referenceToList.appendChild(itemToAdd);
     }
 }
 
