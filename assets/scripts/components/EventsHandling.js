@@ -7,7 +7,7 @@ class EventsHandling{
         this.referenceToList = referenceToList;
     }
     dynamicallyAddEvent(){
-        const listItemCreator = new CreateListItem(this.eventDate, this.eventName);
+        const listItemCreator = new CreateListItem(this.eventDate, this.eventName, this.referenceToList);
         const itemToAdd = listItemCreator.createListItem();
         this.referenceToList.appendChild(itemToAdd)
     }
