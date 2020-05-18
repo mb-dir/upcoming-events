@@ -30,6 +30,11 @@ class CreateListItem {
         listItem.appendChild(dataContainer);
         listItem.appendChild(btnDelete);
 
+        btnDelete.addEventListener('click', ({currentTarget})=>{
+            const liToDelete = currentTarget.closest('li')
+            this.referenceToList.removeChild(liToDelete);
+        });
+
         return listItem;
     }
 }
