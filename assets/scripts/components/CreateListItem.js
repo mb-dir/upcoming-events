@@ -1,3 +1,5 @@
+import DeleteFromStore from './DeleteFromStore.js';
+
 class CreateListItem {
     constructor(eventName, eventDate, referenceToList) {
         this.eventName = eventName;
@@ -32,6 +34,8 @@ class CreateListItem {
 
         btnDelete.addEventListener('click', ({currentTarget})=>{
             const liToDelete = currentTarget.closest('li')
+            const eventName = liToDelete.querySelector('.list__eventContents').textContent;
+            new DeleteFromStore(eventName, 'events')
             this.referenceToList.removeChild(liToDelete);
         });
 
