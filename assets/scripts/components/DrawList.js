@@ -11,38 +11,11 @@ class DrawList{
         if (eventsArray !== null) {
             eventsArray.forEach(ev => {
                 const {date, name} = ev;
-                const listItem = this.createListItem(date, name);
+                const listItemCreator = new CreateListItem(date, name);
+                const listItem = listItemCreator.createListItem();
                 this.referenceToList.appendChild(listItem);
             });
         }
-    }
-    createListItem(name, date){
-        const listItem = document.createElement('li');
-        listItem.classList.add('list__item');
-
-        const dataContainer = document.createElement('div');
-        dataContainer.classList.add('dataContainer');
-
-        const list__eventContents = document.createElement('div');
-        list__eventContents.classList.add('list__eventContents');
-        list__eventContents.textContent = name;
-
-        const list__eventDate = document.createElement('div');
-        list__eventDate.classList.add('list__eventDate');
-        list__eventDate.textContent = date;
-
-        const btnDelete = document.createElement('button');
-        btnDelete.className = "btn btn--deleteEvent";
-        btnDelete.textContent = "X";
-        
-        //combining components of list item
-
-        dataContainer.appendChild(list__eventContents);
-        dataContainer.appendChild(list__eventDate);
-        listItem.appendChild(dataContainer);
-        listItem.appendChild(btnDelete);
-
-        return listItem;
     }
 }
 export default DrawList;
