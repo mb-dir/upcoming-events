@@ -19,7 +19,7 @@ class CreateListItem {
 
         const list__eventDate = document.createElement('div');
         list__eventDate.classList.add('list__eventDate');
-        list__eventDate.textContent = this.eventDate;
+        list__eventDate.textContent = `Data wydarzenia: ${this.eventDate}`;
 
         const btnDelete = document.createElement('button');
         btnDelete.className = "btn btn--deleteEvent";
@@ -33,9 +33,9 @@ class CreateListItem {
         listItem.appendChild(btnDelete);
 
         btnDelete.addEventListener('click', ({currentTarget})=>{
-            const liToDelete = currentTarget.closest('li')
+            const liToDelete = currentTarget.closest('li');
             const eventName = liToDelete.querySelector('.list__eventContents').textContent;
-            new DeleteFromStore(eventName, 'events')
+            new DeleteFromStore(eventName, 'events');
             this.referenceToList.removeChild(liToDelete);
         });
 

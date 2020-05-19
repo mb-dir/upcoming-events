@@ -1,4 +1,4 @@
-import CreateListItem from './CreateListItem.js'
+import CreateListItem from './CreateListItem.js';
 
 class DrawList{
     constructor(nameEventsArray, referenceToList){
@@ -13,7 +13,7 @@ class DrawList{
         if (eventsArray !== null) {
             eventsArray.forEach(ev => {
                 const {date, name} = ev;
-                const listItemCreator = new CreateListItem(date, name, this.referenceToList);
+                const listItemCreator = new CreateListItem(name, date, this.referenceToList);
                 const listItem = listItemCreator.createListItem();
                 this.referenceToList.appendChild(listItem);
             });
