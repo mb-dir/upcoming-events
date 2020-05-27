@@ -13,7 +13,6 @@ There is nothing special, just [click here](https://mb-dir.github.io/upcoming-ev
 ## Versions
 
 - **v.1.0.0**(https://github.com/mb-dir/upcoming-events/releases/tag/v.1.0.0)
-
 In this version the application saves our events in the localstorage, and (based on the localstorage) show these events.
 
 ## License
