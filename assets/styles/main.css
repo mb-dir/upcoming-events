@@ -205,3 +205,23 @@ body {
 .input--error{
     border: 1px solid red;
 }
+
+/* ANIMATIONS */
+
+@keyframes errorApperance{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* AUXILIARY CLASSES */
+
+.animApperance {
+    animation: errorApperance 7s 1 both ease-in-out;
+}
