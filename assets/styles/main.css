@@ -49,10 +49,25 @@ body {
 
 .inputContainer__item {
     width: 35%;
+    position: relative;
 }
 
 .inputContainer__item--bigger {
     width: 55%;
+}
+
+.errorInfo{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -80%;
+    border: 1px solid red;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.errorInfo__contents{
+    margin: 8px 0;
 }
 
 .addEvent__label {
