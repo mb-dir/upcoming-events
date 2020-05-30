@@ -184,3 +184,9 @@ body {
         width: 60px;
     }
 }
+
+/* ERROR STYLES */
+
+.input--error{
+    border: 1px solid red;
+}
