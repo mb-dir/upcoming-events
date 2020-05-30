@@ -1,7 +1,8 @@
 class DateValidator{
-    constructor(eventDateInput, eventDate){
+    constructor(eventDateInput, eventDate, errorDivInfo){
         this.eventDateInput = eventDateInput;
         this.eventDate = new Date(eventDate);
+        this.errorDivInfo = errorDivInfo;
         this.validDate();
     }
     validDate(){
