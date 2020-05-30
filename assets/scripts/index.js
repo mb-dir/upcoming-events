@@ -4,6 +4,7 @@ import EventsHandling from './components/upcoming_events/EventsHandling.js';
 
 const addEventForm = document.querySelector('#addEventForm');
 const eventsList = document.querySelector('#eventsList');
+const eventDateInput = document.querySelector('#eventDate');
 const drawList = new DrawList('events', eventsList);
 
 addEventForm.addEventListener('submit', (e)=>{
@@ -11,7 +12,7 @@ addEventForm.addEventListener('submit', (e)=>{
 
     //variables
     const eventName = document.querySelector('#eventContents').value;
-    const eventDate = document.querySelector('#eventDate').value;
+    const eventDate = eventDateInput.value;
 
     const saveEvent = new SaveStore(eventName, eventDate);
     const eventsHandling = new EventsHandling(eventName, eventDate, eventsList);
