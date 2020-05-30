@@ -7,7 +7,11 @@ class DateValidator{
     validDate(){
         const currentDate = new Date();
         if(currentDate > this.eventDate){
-            throw "Incorrect date!"
+            this.eventDateInput.classList.add("input--error");
+            setTimeout(()=>{
+                this.eventDateInput.classList.remove("input--error");
+            },2000)
+            throw "Incorrect date!";   
         }
     }
 }
