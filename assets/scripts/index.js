@@ -22,4 +22,5 @@ addEventForm.addEventListener('submit', (e)=>{
     const saveEvent = new SaveStore(eventName, eventDate);
     const eventsHandling = new EventsHandling(eventName, eventDate, eventsList);
     eventsHandling.dynamicallyAddEvent();
+    dateSorter.sort();
 });
