@@ -5,8 +5,10 @@ class DateSorter{
     }
     sort(){
         const eventsToSort = JSON.parse(window.localStorage.getItem(this.arrayEventsName));
-        for(const item of eventsToSort){
-            console.log(item.date)
+        eventsToSort.sort(compareDate)
+
+        function compareDate(a, b) {
+            return new Date(a.date) - new Date(b.date);
         }
     }
 }
