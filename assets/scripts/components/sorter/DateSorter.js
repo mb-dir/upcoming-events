@@ -10,6 +10,7 @@ class DateSorter{
         function compareDate(a, b) {
             return new Date(a.date) - new Date(b.date);
         }
+        window.localStorage.setItem(this.arrayEventsName, JSON.stringify(eventsToSort))
     }
 }
 
