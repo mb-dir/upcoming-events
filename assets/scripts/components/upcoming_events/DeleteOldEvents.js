@@ -1,6 +1,6 @@
 class DeleteOldEvents{
-    constructor(){
-
+    constructor(nameEventsArray) {
+        this.nameEventsArray = nameEventsArray;
     }
 }
 
