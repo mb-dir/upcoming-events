@@ -1,7 +1,7 @@
 import SaveStore from './components/upcoming_events/SaveStore.js';
 import DrawList from './components/upcoming_events/DrawList.js';
 import EventsHandling from './components/upcoming_events/EventsHandling.js';
-import DateValidator from './components/validator/DateValidator.js';
+//import DateValidator from './components/validator/DateValidator.js';
 import DateSorter from './components/sorter/DateSorter.js'
 
 const addEventForm = document.querySelector('#addEventForm');
@@ -18,7 +18,7 @@ addEventForm.addEventListener('submit', (e)=>{
     const eventName = document.querySelector('#eventContents').value;
     const eventDate = eventDateInput.value;
 
-    const dateValidator = new DateValidator(eventDateInput, eventDate, errorDivInfo);
+    //const dateValidator = new DateValidator(eventDateInput, eventDate, errorDivInfo);
     const saveEvent = new SaveStore(eventName, eventDate);
     const eventsHandling = new EventsHandling(eventName, eventDate, eventsList);
     eventsHandling.dynamicallyAddEvent();
