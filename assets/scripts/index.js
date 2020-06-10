@@ -3,7 +3,9 @@ import DrawList from './components/upcoming_events/DrawList.js';
 import EventsHandling from './components/upcoming_events/EventsHandling.js';
 import DateValidator from './components/validator/DateValidator.js';
 import DateSorter from './components/sorter/DateSorter.js'
+import DeleteOldEvents from './components/upcoming_events/DeleteOldEvents.js';
 
+const deleteOldEvents = new DeleteOldEvents('events');
 const addEventForm = document.querySelector('#addEventForm');
 const eventsList = document.querySelector('#eventsList');
 const eventDateInput = document.querySelector('#eventDate');
