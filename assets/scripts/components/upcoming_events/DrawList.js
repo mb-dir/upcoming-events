@@ -19,7 +19,8 @@ class DrawList{
                 if (new Date(ev.date) < yesterday) {
                     return;
                 }else{
-                    const listItemCreator = new CreateListItem(name, date, this.referenceToList);
+                    const isCloseEvent = this.markCloseEvent(date);
+                    const listItemCreator = new CreateListItem(name, date, this.referenceToList, isCloseEvent);
                     const listItem = listItemCreator.createListItem();
                     this.referenceToList.appendChild(listItem);
                 }
