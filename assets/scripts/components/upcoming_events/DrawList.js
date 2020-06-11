@@ -26,5 +26,18 @@ class DrawList{
             });
         }
     }
+
+    //auxiliary methods
+
+    //this method checks if date is close, it cooperates with class responsible for creating list item(CreateListItem)
+    markCloseEvent(eventDate){
+        const nowDate = new Date();
+        const dateEvent = new Date(eventDate);
+        if ((dateEvent - nowDate) / 86400000 < 4) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
 export default DrawList;
