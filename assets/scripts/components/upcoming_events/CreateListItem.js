@@ -1,10 +1,11 @@
 import DeleteFromStore from './DeleteFromStore.js';
 
 class CreateListItem {
-    constructor(eventName, eventDate, referenceToList) {
+    constructor(eventName, eventDate, referenceToList, isCloseEvent) {
         this.eventName = eventName;
         this.eventDate = eventDate;
         this.referenceToList = referenceToList;
+        this.isCloseEvent = isCloseEvent;
     }
     createListItem() {
         const listItem = document.createElement('li');
