@@ -40,5 +40,16 @@ class DrawList{
             return false;
         }
     }
+
+    isOutdated(eventDate) {
+        const nowDate = new Date();
+        const yesterday = nowDate.setDate(nowDate.getDate() - 1);
+
+        if (new Date(eventDate) < yesterday) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 export default DrawList;
