@@ -9,7 +9,7 @@ class DrawList{
     }
     //Methods responsible for drawing events list based on localstorage
     drawList(){
-        const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray))
+        const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray));
         if (eventsArray !== null) {
             eventsArray.forEach(ev => {
                 const {date, name} = ev;
