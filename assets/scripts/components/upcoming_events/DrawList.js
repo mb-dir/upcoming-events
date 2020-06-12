@@ -19,11 +19,25 @@ class DrawList{
                 if (new Date(ev.date) < yesterday) {
                     return;
                 }else{
-                    const listItemCreator = new CreateListItem(name, date, this.referenceToList);
+                    const isCloseEvent = this.markCloseEvent(date);
+                    const listItemCreator = new CreateListItem(name, date, this.referenceToList, isCloseEvent);
                     const listItem = listItemCreator.createListItem();
                     this.referenceToList.appendChild(listItem);
                 }
             });
+        }
+    }
+
+    //auxiliary methods
+
+    //this method checks if date is close, it cooperates with class responsible for creating list item(CreateListItem)
+    markCloseEvent(eventDate){
+        const nowDate = new Date();
+        const dateEvent = new Date(eventDate);
+        if ((dateEvent - nowDate) / 86400000 < 4) {
+            return true;
+        }else{
+            return false;
         }
     }
 }
