@@ -18,8 +18,10 @@ In this version the application saves our events in the localstorage, and (based
 The application in this version checks if date is not from the past, when date is from the past the application will show information about that to the user.
 - [v.1.2.0](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.2.0).
 In this version the application sorts events by date.
-- [**v.1.3.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.3.0).
+- [v.1.3.0](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.3.0).
 In this version the application does not show outdated events.
+- [**v.1.4.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.0).
+The new feature, which has been added in this version, marks date which is close.
 
 ## License
 
