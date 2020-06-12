@@ -11,7 +11,7 @@ class DrawList{
     drawList(){
         const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray))
         const nowDate = new Date();
-        const yesterday = nowDate.setDate(nowDate.getDate() - 1)
+        const yesterday = nowDate.setDate(nowDate.getDate() - 1);
         if (eventsArray !== null) {
             eventsArray.forEach(ev => {
                 const {date, name} = ev;
