@@ -10,13 +10,11 @@ class DrawList{
     //Methods responsible for drawing events list based on localstorage
     drawList(){
         const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray))
-        const nowDate = new Date();
-        const yesterday = nowDate.setDate(nowDate.getDate() - 1);
         if (eventsArray !== null) {
             eventsArray.forEach(ev => {
                 const {date, name} = ev;
                 //If the event is outdated it will not be draw
-                if (new Date(ev.date) < yesterday) {
+                if (this.isOutdated(date)) {
                     return;
                 }else{
                     const isCloseEvent = this.markCloseEvent(date);
