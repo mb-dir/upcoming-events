@@ -18,7 +18,7 @@ class DateValidator{
         setTimeout(() => {
             this.eventDateInput.classList.remove("input--error");
             this.errorDivInfo.classList.remove("animApperance");
-        }, 7000)
+        }, 7000);
     }
 }
 

@@ -6,7 +6,7 @@ class DeleteOldEvents{
     checkEventsDate(){
         const eventsArray = JSON.parse(window.localStorage.getItem(this.nameEventsArray));
         const nowDate = new Date();
-        const yesterday = nowDate.setDate(nowDate.getDate() - 1)
+        const yesterday = nowDate.setDate(nowDate.getDate() - 1);
 
         eventsArray.forEach((ev, evIndex, evArr) => {
             //cuz I do not want to delete events which happened that day
