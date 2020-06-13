@@ -20,8 +20,10 @@ The application in this version checks if date is not from the past, when date i
 In this version the application sorts events by date.
 - [v.1.3.0](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.3.0).
 In this version the application does not show outdated events.
-- [**v.1.4.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.0).
+- [v.1.4.0](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.0).
 The new feature, which has been added in this version, marks date which is close.
+- [**v.1.4.1**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.1).
+A small refactoring.
 
 ## License
 
