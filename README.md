@@ -8,7 +8,7 @@ so I have decided that I will create an application which helps me remember thes
 
 ## Usage
 
-There is nothing special, just [click here](https://mb-dir.github.io/upcoming-events/) and bookmark this page - that's all
+There is nothing special, just [click here](https://mb-dir.github.io/upcoming-events/) and bookmark this page - that's all, or the second way to use this application is that you can download/clone this repo and open this project on your own computer(but you have to remember about use liveserver for example from [VSC](https://code.visualstudio.com/), cuz I use [JS Modules](https://javascript.info/modules-intro#what-is-a-module)).
 
 ## Versions
 
