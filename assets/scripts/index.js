@@ -13,6 +13,12 @@ const errorDivInfo = document.querySelector('.errorInfo');
 const drawList = new DrawList('events', eventsList);
 const dateSorter = new DateSorter('events');
 
+//Variables related with dark mode
+const darkModeCheckbox = document.querySelector('#darkModeCheckbox');
+//Everyone btns and inputs will be changed in dark mode
+const allButtonsOnPage = document.querySelectorAll('.btn');
+const allInputssOnPage = document.querySelectorAll('.input');
+
 addEventForm.addEventListener('submit', (e)=>{
     e.preventDefault();
 
