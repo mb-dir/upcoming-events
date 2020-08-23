@@ -4,6 +4,7 @@ import EventsHandling from './components/upcoming_events/EventsHandling.js';
 import DateValidator from './components/validator/DateValidator.js';
 import DateSorter from './components/sorter/DateSorter.js';
 import DeleteOldEvents from './components/upcoming_events/DeleteOldEvents.js';
+import Darkmode from './components/darkmode_handling/Darkmode.js';
 
 const deleteOldEvents = new DeleteOldEvents('events');
 const addEventForm = document.querySelector('#addEventForm');
@@ -18,6 +19,8 @@ const darkModeCheckbox = document.querySelector('#darkModeCheckbox');
 //Everyone btns and inputs will be changed in dark mode
 const allButtonsOnPage = document.querySelectorAll('.btn');
 const allInputssOnPage = document.querySelectorAll('.input');
+
+const darkmode = new Darkmode('--darkMode', 'appDark', darkModeCheckbox, allButtonsOnPage, allInputssOnPage)
 
 addEventForm.addEventListener('submit', (e)=>{
     e.preventDefault();
