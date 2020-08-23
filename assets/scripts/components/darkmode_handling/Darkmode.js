@@ -10,7 +10,7 @@ class DarkMode {
 
     buttonHandling(){
         this.btnModeChange.addEventListener('click', ()=>{
-            console.log("It works, you can create styles for dark mode")
+            document.body.classList.toggle(this.bodyDarkModeClassName);
         })
     }
 }
