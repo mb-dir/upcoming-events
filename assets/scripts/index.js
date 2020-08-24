@@ -17,7 +17,7 @@ const dateSorter = new DateSorter('events');
 //Variables related with dark mode
 const darkModeCheckbox = document.querySelector('#darkModeCheckbox');
 
-const darkmode = new Darkmode('--darkMode', 'appDark', darkModeCheckbox, allButtonsOnPage, allInputssOnPage)
+const darkmode = new Darkmode('appDark', darkModeCheckbox,)
 
 addEventForm.addEventListener('submit', (e)=>{
     e.preventDefault();
