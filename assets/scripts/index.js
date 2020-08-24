@@ -16,9 +16,6 @@ const dateSorter = new DateSorter('events');
 
 //Variables related with dark mode
 const darkModeCheckbox = document.querySelector('#darkModeCheckbox');
-//Everyone btns and inputs will be changed in dark mode
-const allButtonsOnPage = document.querySelectorAll('.btn');
-const allInputssOnPage = document.querySelectorAll('.input');
 
 const darkmode = new Darkmode('--darkMode', 'appDark', darkModeCheckbox, allButtonsOnPage, allInputssOnPage)
 
