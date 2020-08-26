@@ -22,8 +22,10 @@ In this version the application sorts events by date.
 In this version the application does not show outdated events.
 - [v.1.4.0](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.0).
 The new feature, which has been added in this version, marks date which is close.
-- [**v.1.4.1**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.1).
+- [v.1.4.1](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.1).
 A small refactoring.
+- [**v.1.5.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.5.0).
+A new feature - dark mode on page.
 
 ## License
 
