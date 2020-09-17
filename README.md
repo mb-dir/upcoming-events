@@ -27,6 +27,14 @@ A small refactoring.
 - [**v.1.5.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.5.0).
 A new feature - dark mode on page.
 
+## My comments
+
+- In my opinion the structure of the files is too complicated, before I started work at this project I have been thinking that splitting structure would be fine, but it is too splitted and very unreadable.
+
+- The graphical interface is simple, but(for me) also very clearly and intuitive, so I am happy with it.
+
+- Unfortunately I cannot say the same about git history, it could be clearer(especially commit messages). Pushing commits like "update readme.md" directly to master branch was not the best idea. The idea with the versions of the project is interesting, and in my opinion good, but version relases should be better descripted.
+
 ## License
 
 This project is licensed under the MIT License
