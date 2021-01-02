@@ -24,8 +24,10 @@ In this version the application does not show outdated events.
 The new feature, which has been added in this version, marks date which is close.
 - [v.1.4.1](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.4.1).
 A small refactoring.
-- [**v.1.5.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.5.0).
+- [v.1.5.0](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.5.0).
 A new feature - dark mode on page.
+- [**v.1.6.0**](https://github.com/mb-dir/upcoming-events/releases/tag/v.1.6.0).
+Change colors and add some hover effect.
 
 ## My comments
 
