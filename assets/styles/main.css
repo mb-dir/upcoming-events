@@ -6,6 +6,7 @@
 body {
     text-align: center;
     font-family: 'Lato', sans-serif;
+    background-color: #f3f3f3;
 }
 
 .section {
@@ -14,6 +15,10 @@ body {
 }
 
 .btn:hover{
+    cursor: pointer;
+}
+
+.label--goToDark:hover{
     cursor: pointer;
 }
 
@@ -92,6 +97,9 @@ body {
     width: 90%;
     padding: 0;
     height: 22px;
+}
+.input--goToDark:hover {
+    cursor: pointer;
 }
 
 .list {
