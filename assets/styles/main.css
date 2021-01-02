@@ -18,6 +18,10 @@ body {
     cursor: pointer;
 }
 
+.label--goToDark:hover{
+    cursor: pointer;
+}
+
 /*STYLES FOR SUBMITING DATA FORM*/
 
 .addEvent {
@@ -93,6 +97,9 @@ body {
     width: 90%;
     padding: 0;
     height: 22px;
+}
+.input--goToDark:hover {
+    cursor: pointer;
 }
 
 .list {
