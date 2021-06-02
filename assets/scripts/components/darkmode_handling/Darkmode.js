@@ -22,8 +22,10 @@ class DarkMode {
     rememberDarkMode(){
         if (window.localStorage.getItem("darkMode") === "true"){
             document.body.classList.add(this.bodyDarkModeClassName);
+            this.btnModeChange.checked = true;
         }else{
             document.body.classList.remove(this.bodyDarkModeClassName);
+            this.btnModeChange.checked = false;
         }
     }
 }
