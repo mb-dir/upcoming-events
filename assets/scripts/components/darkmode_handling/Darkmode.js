@@ -3,6 +3,7 @@ class DarkMode {
         this.bodyDarkModeClassName = bodyDarkModeClassName;
         this.btnModeChange = btnModeChange;
 
+        this.rememberDarkMode();
         this.buttonHandling();
     }
 
@@ -16,6 +17,14 @@ class DarkMode {
                 window.localStorage.setItem("darkMode", false);
             }
         })
+    }
+
+    rememberDarkMode(){
+        if (window.localStorage.getItem("darkMode") === "true"){
+            document.body.classList.add(this.bodyDarkModeClassName);
+        }else{
+            document.body.classList.remove(this.bodyDarkModeClassName);
+        }
     }
 }
 
