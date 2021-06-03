@@ -10,7 +10,7 @@ class DarkMode {
     buttonHandling(){
         this.btnModeChange.addEventListener('click', ()=>{
             document.body.classList.toggle(this.bodyDarkModeClassName);
-            //When user clicks the button, check if there is "darkMode" in sotrage, if it isn't(condition returns false but "!" makes it true) set darkMode to true else set false
+            //When user clicks the button, check if there is "darkMode" in sotrage, if it isn'tgit status set darkMode to true else set false
             if (window.localStorage.getItem("darkMode") !== "true"){
                 window.localStorage.setItem("darkMode", true);
             }else{
